@@ -21,6 +21,7 @@
 		7A24729B181AA8050017C135 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A24727D181AA8050017C135 /* UIKit.framework */; };
 		7A2472A3181AA8050017C135 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A2472A1181AA8050017C135 /* InfoPlist.strings */; };
 		7A2472A5181AA8050017C135 /* ScoalaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2472A4181AA8050017C135 /* ScoalaTests.m */; };
+		7A2472B0181AAB020017C135 /* materiiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2472AF181AAB020017C135 /* materiiViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		7A2472A0181AA8050017C135 /* ScoalaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScoalaTests-Info.plist"; sourceTree = "<group>"; };
 		7A2472A2181AA8050017C135 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7A2472A4181AA8050017C135 /* ScoalaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoalaTests.m; sourceTree = "<group>"; };
+		7A2472AE181AAB020017C135 /* materiiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = materiiViewController.h; sourceTree = "<group>"; };
+		7A2472AF181AAB020017C135 /* materiiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = materiiViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				7A24728F181AA8050017C135 /* loginViewController.m */,
 				7A247291181AA8050017C135 /* Images.xcassets */,
 				7A247280181AA8050017C135 /* Supporting Files */,
+				7A2472AE181AAB020017C135 /* materiiViewController.h */,
+				7A2472AF181AAB020017C135 /* materiiViewController.m */,
 			);
 			path = Scoala;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A2472B0181AAB020017C135 /* materiiViewController.m in Sources */,
 				7A24728A181AA8050017C135 /* loginAppDelegate.m in Sources */,
 				7A247290181AA8050017C135 /* loginViewController.m in Sources */,
 				7A247286181AA8050017C135 /* main.m in Sources */,
@@ -461,6 +467,7 @@
 				7A2472AA181AA8050017C135 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A2472AB181AA8050017C135 /* Build configuration list for PBXNativeTarget "ScoalaTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +476,7 @@
 				7A2472AD181AA8050017C135 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

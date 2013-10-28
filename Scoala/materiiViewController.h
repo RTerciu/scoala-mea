@@ -1,5 +1,5 @@
 //
-//  loginViewController.h
+//  materiiViewController.h
 //  Scoala
 //
 //  Created by CLEVERSOFT-2 on 10/25/13.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface loginViewController : UIViewController
+@interface materiiViewController : UIViewController
 
-- (void)viewWillAppear:(BOOL)animated;
 
 @end
