@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CommonCrypto/CommonDigest.h>
+#import "database.h"
 
 @interface loginViewController : UIViewController
 

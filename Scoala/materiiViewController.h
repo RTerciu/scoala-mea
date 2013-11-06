@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "database.h"
 
 @interface materiiViewController : UIViewController
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0876AE0318294A890012F1DD /* database.m in Sources */ = {isa = PBXBuildFile; fileRef = 0876AE0218294A890012F1DD /* database.m */; };
 		7A24727A181AA8050017C135 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A247279181AA8050017C135 /* Foundation.framework */; };
 		7A24727C181AA8050017C135 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A24727B181AA8050017C135 /* CoreGraphics.framework */; };
 		7A24727E181AA8050017C135 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A24727D181AA8050017C135 /* UIKit.framework */; };
@@ -22,6 +23,7 @@
 		7A2472A3181AA8050017C135 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A2472A1181AA8050017C135 /* InfoPlist.strings */; };
 		7A2472A5181AA8050017C135 /* ScoalaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2472A4181AA8050017C135 /* ScoalaTests.m */; };
 		7A2472B0181AAB020017C135 /* materiiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A2472AF181AAB020017C135 /* materiiViewController.m */; };
+		7A3CAB5F182A9FC8006A0CE7 /* settingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3CAB5E182A9FC8006A0CE7 /* settingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0876AE0118294A890012F1DD /* database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = database.h; sourceTree = "<group>"; };
+		0876AE0218294A890012F1DD /* database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = database.m; sourceTree = "<group>"; };
 		7A247276181AA8050017C135 /* Scoala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scoala.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A247279181AA8050017C135 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7A24727B181AA8050017C135 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +60,8 @@
 		7A2472A4181AA8050017C135 /* ScoalaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoalaTests.m; sourceTree = "<group>"; };
 		7A2472AE181AAB020017C135 /* materiiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = materiiViewController.h; sourceTree = "<group>"; };
 		7A2472AF181AAB020017C135 /* materiiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = materiiViewController.m; sourceTree = "<group>"; };
+		7A3CAB5D182A9FC8006A0CE7 /* settingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = settingsViewController.h; path = ../settingsViewController.h; sourceTree = "<group>"; };
+		7A3CAB5E182A9FC8006A0CE7 /* settingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = settingsViewController.m; path = ../settingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				7A247288181AA8050017C135 /* loginAppDelegate.h */,
+				0876AE0118294A890012F1DD /* database.h */,
+				0876AE0218294A890012F1DD /* database.m */,
 				7A247289181AA8050017C135 /* loginAppDelegate.m */,
 				7A24728B181AA8050017C135 /* Main.storyboard */,
 				7A24728E181AA8050017C135 /* loginViewController.h */,
@@ -123,7 +131,9 @@
 				7A247291181AA8050017C135 /* Images.xcassets */,
 				7A247280181AA8050017C135 /* Supporting Files */,
 				7A2472AE181AAB020017C135 /* materiiViewController.h */,
+				7A3CAB5D182A9FC8006A0CE7 /* settingsViewController.h */,
 				7A2472AF181AAB020017C135 /* materiiViewController.m */,
+				7A3CAB5E182A9FC8006A0CE7 /* settingsViewController.m */,
 			);
 			path = Scoala;
 			sourceTree = "<group>";
@@ -258,7 +268,9 @@
 				7A2472B0181AAB020017C135 /* materiiViewController.m in Sources */,
 				7A24728A181AA8050017C135 /* loginAppDelegate.m in Sources */,
 				7A247290181AA8050017C135 /* loginViewController.m in Sources */,
+				0876AE0318294A890012F1DD /* database.m in Sources */,
 				7A247286181AA8050017C135 /* main.m in Sources */,
+				7A3CAB5F182A9FC8006A0CE7 /* settingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

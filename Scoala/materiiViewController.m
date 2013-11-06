@@ -11,10 +11,14 @@
 
 @interface materiiViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *Label;
+@property (weak, nonatomic) IBOutlet UITextView *TextViewDeAfisat;
 
 @end
 
 @implementation materiiViewController
+
+
+
 - (IBAction)actiune:(id)sender {
     
     
@@ -23,7 +27,34 @@
 }
 - (IBAction)dezinitializeaza:(id)sender {
     NSUserDefaults *UserID = [NSUserDefaults standardUserDefaults];
-     [UserID setInteger:0	 forKey:@"cheieUser"];}
+     [UserID setInteger:0	 forKey:@"cheieUser"];
+    [UserID setObject:0  forKey:@"IDCopil"];
+    [self performSegueWithIdentifier:@"toLogin" sender:nil];
+
+
+}
+- (IBAction)verificaFunctie:(id)sender {
+    
+   
+    database * db_connect=[[database alloc]init];
+    NSArray * materii;
+    
+    //materii=[db_connect getMarks:@"185"];
+    materii=[db_connect getChild:@"209"];
+    //materii=[db_connect getNews];
+    //materii=[db_connect getMaterii];
+
+
+    
+    for(int i=0;i<[materii count];i++)
+    {
+        self.TextViewDeAfisat.text=[NSString stringWithFormat:@"%@ %@ \n",self.TextViewDeAfisat.text,[[materii objectAtIndex:i] objectForKey:@"id"]];
+        
+        
+    }
+    
+    
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -51,6 +82,8 @@
         self.Label.text=@"e initializat";
     //altfel raman pe acelasi view
     
+
+    
 }
 
 - (void)viewDidLoad
@@ -58,18 +91,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+  
     
-    
-  /* NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
-    NSInteger  checkUserId=[prefs integerForKey:@"cheieUser"];
-    [self performSegueWithIdentifier:@"toLogin" sender:nil];
-    
-    if(checkUserId==0)
-    {    self.Label.text=@"nu e initializat";
-        [self performSegueWithIdentifier:@"toLogin" sender:nil];
-    }
-    else
-        self.Label.text=@"e initializat";*/
+
     
 }
 
